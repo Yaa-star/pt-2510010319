@@ -8,6 +8,7 @@ using namespace std;
 int main() {
     int jumlah_mahasiswa = 32;          // bilangan bulat
     double nilai_uts = 78.5;            // bilangan pecahan
+    // double nilai_uts {85.7};         akan error karena Ditolak, karena narrowing conversion Error, tidak menghasilkan program
     char huruf_mutu = 'B';              // satu karakter, diapit kutip tunggal
     bool lulus = true;                  // benar atau salah
     string nama = "Siti Aminah";   // teks, diapit kutip ganda
