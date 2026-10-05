@@ -12,12 +12,14 @@ int main() {
     //         dihitung, dan bisa diawali 0, jadi pikirkan tipe yang tepat.
         string nama;
         string npm;
+        string program;
     // TODO 2: deklarasikan empat variabel nilai: kehadiran, mingguan, uts, uas.
     //         Nilai bisa berisi pecahan seperti 85.5. 
         double kehadiran = 0;
         double minngguan = 0;
         double uts = 0;
         double uas = 0;
+        int semester = 0;
 
     cout << "=== SiNilai v0.1 ===\n";
     // TODO 3: baca nama. Ingat, nama bisa mengandung spasi.
@@ -26,6 +28,9 @@ int main() {
     // TODO 4: baca NPM.
     cout << "NPM     : ";
     cin >> npm;
+    cin.ignore();
+    cout << "Program Studi  : ";
+    getline(cin, program );
     // TODO 5: baca keempat komponen nilai, satu per satu, dengan prompt seperti di atas.
     cout << "Kehadiran : ";
     cin >> kehadiran; 
@@ -35,15 +40,21 @@ int main() {
     cin >> uts;
     cout << "UAS       : ";
     cin >> uas;
+    cout << "Semester  : ";
+    cin >> semester;
+
 
     // TODO 6: tampilkan semua data yang tadi dibaca, satu baris per data, rata seperti prompt.
     cout << "\n --- Kartu data mahasiswa --- \n";  
     cout << "Nama      : " << nama << "\n";
     cout << "NPM       : " << npm << "\n";
+    cout << "Program Studi  : " << program << "\n";
+    cout << "Semester  : " << semester << "\n";
     cout << "Kehadiran : " << kehadiran << "\n";
     cout << "Mingguan  : " << minngguan << "\n";
     cout << "UTS       : " << uts << "\n";
     cout << "UAS       : " << uas << "\n";
+   
 
     return 0;
 }
